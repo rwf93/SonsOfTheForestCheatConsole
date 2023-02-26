@@ -7,9 +7,9 @@ $mline = <<string_ending_delimiter;
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <AssemblyName>ForestMod</AssemblyName>
-    <Description>My first plugin</Description>
-    <Version>1.0.0</Version>
+    <AssemblyName>CheatConsole</AssemblyName>
+    <Description>ShitCunt</Description>
+    <Version>6.9.6.9</Version>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <LangVersion>latest</LangVersion>
     <RestoreAdditionalProjectSources>
@@ -17,7 +17,7 @@ $mline = <<string_ending_delimiter;
       https://nuget.bepinex.dev/v3/index.json;
       https://nuget.samboy.dev/v3/index.json
     </RestoreAdditionalProjectSources>
-    <RootNamespace>ForestMod</RootNamespace>
+    <RootNamespace>CheatConsole</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
@@ -29,12 +29,14 @@ my @files = <lib/*>;
 foreach my $file (@files) {
   my ($name, $path, $suffix) = fileparse($file, qr'\.[^\.]*');
 
-  $generated = <<string_ending_delimiter;
+  if($suffix eq ".dll") {
+    $mline = $mline . 
+<<string_ending_delimiter;
     <Reference Include="$name">
       <HintPath>$path$name$suffix</HintPath>
     </Reference>
 string_ending_delimiter
-  $mline = $mline . $generated;
+  }
 }
 
 $mline = $mline . <<string_ending_delimiter;

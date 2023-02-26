@@ -21,6 +21,9 @@
     <Reference Include="Assembly-CSharp">
       <HintPath>lib/Assembly-CSharp.dll</HintPath>
     </Reference>
+    <Reference Include="Endnight">
+      <HintPath>lib/Endnight.dll</HintPath>
+    </Reference>
     <Reference Include="Il2CppMono.Security">
       <HintPath>lib/Il2CppMono.Security.dll</HintPath>
     </Reference>
