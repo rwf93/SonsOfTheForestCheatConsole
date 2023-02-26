@@ -1,0 +1,16 @@
+## Installation
+### Windows
+Install [BepInEx](https://builds.bepinex.dev/projects/bepinex_be_) (preferably 667)  
+copy (insert release here) to plugins in BepInEx  
+Load into the game 
+Spam F1 (it works when ~~mercury is in retrograde and the stars align, or whenever the fuck it wants~~ the Vitals GUI is on the screen)
+
+## Building
+### Windows 
+Install [BepInEx](https://builds.bepinex.dev/projects/bepinex_be_) (preferably 667)  
+Grab all the files from unity-libs and drop it into the "libs" folder  
+Grab TheForest.*.dll from interop
+Grab Sons.*.dll from interop  
+Grab Il2CppSystem.dll (or anything relating to il2cpp) also from interop  
+Run ``dotnet build``  
+Profit?? ))) men Subscribe))
