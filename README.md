@@ -8,9 +8,8 @@ Spam F1 (it works when ~~mercury is in retrograde and the stars align, or whenev
 ## Building
 ### Windows 
 Install [BepInEx](https://builds.bepinex.dev/projects/bepinex_be_) (preferably 667)  
-Grab all the files from unity-libs and drop it into the "libs" folder  
-Grab ``TheForest.*.dll`` from interop  
+Grab all the files from unity-libs and drop it into the "libs" folder    
 Grab ``Sons.*.dll`` from interop    
-Grab ``Il2CppSystem.dll`` (or anything relating to il2cpp) also from interop    
 Run ``dotnet build``  
-Profit?? ))) men Subscribe))
+Profit?? ))) men Subscribe))  
+Note: If you want to regenerate the .csproj from the libs folder, you can run the ``generate_csproj`` perl script

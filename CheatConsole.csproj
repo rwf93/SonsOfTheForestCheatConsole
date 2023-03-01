@@ -18,42 +18,6 @@
   <ItemGroup>
     <PackageReference Include="BepInEx.Unity.IL2CPP" Version="6.0.0-be.*" IncludeAssets="compile" />
     <PackageReference Include="BepInEx.PluginInfoProps" Version="2.*" />
-    <Reference Include="Assembly-CSharp">
-      <HintPath>lib/Assembly-CSharp.dll</HintPath>
-    </Reference>
-    <Reference Include="Endnight">
-      <HintPath>lib/Endnight.dll</HintPath>
-    </Reference>
-    <Reference Include="Il2CppMono.Security">
-      <HintPath>lib/Il2CppMono.Security.dll</HintPath>
-    </Reference>
-    <Reference Include="Il2Cppmscorlib">
-      <HintPath>lib/Il2Cppmscorlib.dll</HintPath>
-    </Reference>
-    <Reference Include="Il2CppSystem.Configuration">
-      <HintPath>lib/Il2CppSystem.Configuration.dll</HintPath>
-    </Reference>
-    <Reference Include="Il2CppSystem.Core">
-      <HintPath>lib/Il2CppSystem.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Il2CppSystem.Data">
-      <HintPath>lib/Il2CppSystem.Data.dll</HintPath>
-    </Reference>
-    <Reference Include="Il2CppSystem">
-      <HintPath>lib/Il2CppSystem.dll</HintPath>
-    </Reference>
-    <Reference Include="Il2CppSystem.Numerics">
-      <HintPath>lib/Il2CppSystem.Numerics.dll</HintPath>
-    </Reference>
-    <Reference Include="Il2CppSystem.Runtime.Serialization">
-      <HintPath>lib/Il2CppSystem.Runtime.Serialization.dll</HintPath>
-    </Reference>
-    <Reference Include="Il2CppSystem.Xml">
-      <HintPath>lib/Il2CppSystem.Xml.dll</HintPath>
-    </Reference>
-    <Reference Include="Il2CppSystem.Xml.Linq">
-      <HintPath>lib/Il2CppSystem.Xml.Linq.dll</HintPath>
-    </Reference>
     <Reference Include="Sons.Ai.Utilities">
       <HintPath>lib/Sons.Ai.Utilities.dll</HintPath>
     </Reference>
@@ -215,15 +179,6 @@
     </Reference>
     <Reference Include="Sons.Weapon">
       <HintPath>lib/Sons.Weapon.dll</HintPath>
-    </Reference>
-    <Reference Include="TheForest.Commons">
-      <HintPath>lib/TheForest.Commons.dll</HintPath>
-    </Reference>
-    <Reference Include="TheForest.Modding">
-      <HintPath>lib/TheForest.Modding.dll</HintPath>
-    </Reference>
-    <Reference Include="TheForest.Utils">
-      <HintPath>lib/TheForest.Utils.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AccessibilityModule">
       <HintPath>lib/UnityEngine.AccessibilityModule.dll</HintPath>

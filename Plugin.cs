@@ -5,13 +5,18 @@ using BepInEx.Unity.IL2CPP;
 using UnityEngine;
 using Il2CppInterop.Runtime.Injection;
 using HarmonyLib;
+
 namespace CheatConsole;
 
 [BepInPlugin(MyPluginInfo.PLUGIN_GUID, MyPluginInfo.PLUGIN_NAME, MyPluginInfo.PLUGIN_VERSION)]
 public class Plugin : BasePlugin
 {
+    public static Plugin instance;
+
     public override void Load()
     {
+        instance = this;
+
         ClassInjector.RegisterTypeInIl2Cpp<BruhBehavour>();
 
         var go = new GameObject();
@@ -35,8 +40,6 @@ public class BruhBehavour : MonoBehaviour
 {
     private static bool flip = false;
     private static bool show = true;
-
-
     [HarmonyPostfix]
     public static void Update()
     {
